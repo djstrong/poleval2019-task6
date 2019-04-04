@@ -16,7 +16,7 @@ cut -c 10 task1/train.ft > gold.out
 python3 optimize_thresholds_fasttext_final.py gold.out temp.out 1 -w
 ```
 
-Apply threhold:
+Apply threshold:
 
 ```
 fasttext predict-prob model1.ft.bin task1/test.ft 2 > temp.out
